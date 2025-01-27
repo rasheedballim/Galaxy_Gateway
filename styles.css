@@ -1,0 +1,58 @@
+.header {
+  background-color: rgba(34, 42, 49, 255);
+  height: 100px;
+  flex: 0 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+body{
+  background-color: rgb(21, 37, 82);
+
+}
+
+#logo {
+  height: 75px;
+  width: 150px;
+  margin: 10px;
+  margin-left: 40px;
+  border-radius: 20px;
+}
+.links {
+  color: white;
+  justify-items: end;
+  padding: 5px;
+  font-size: 15px;
+}
+#buttons {
+  margin: 30px;
+}
+#drop-down {
+  appearance: none;
+  background-color: rgba(34, 42, 49, 255);
+  color: white;
+}
+#mrp-background {
+  
+    width: auto;
+    height: 600px;
+    background-color: rgb(21, 37, 82);
+    border: red 2px solid;
+
+}
+h1{
+    color: aliceblue;
+    text-align: center;
+    font-size: 50px;
+}
+#photos-container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+#photos-container img{
+  height: 200px;
+  width: 200px;
+  border-radius: 10px;
+}

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script src="script.js" defer></script>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+  </head>
+  <body>
+    <div id="nav"></div>
+    <script>
+      fetch("nav.html")
+        .then((res) => res.text())
+        .then((data) => {
+          document.getElementById("nav").innerHTML = data;
+        })
+        .catch((err) => console.error("ERROR", err));
+    </script>
+
+    <h1>Mars Rover Photos</h1>
+    <div id="conffig">
+      <input type="text" id="date-picker" />
+      <select id="selectCamera" onchange="selectCamera()">
+        <option value="FHAZ">FHAZ</option>
+        <option value="RHAZ">RHAZ</option>
+        <option value="MAST">MAST</option>
+        <option value="CHEMCAM">CHEMCAM</option>
+        <option value="MAHLI">MAHLI</option>
+      </select>
+    </div>
+
+    <div id="photos-container"></div>
+  </body>
+</html>
