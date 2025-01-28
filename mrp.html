@@ -24,7 +24,34 @@
     </script>
 
     <h1>Mars Rover Photos</h1>
-    <div id="conffig">
+    <p>
+      The Curiosity Rover is a car-sized robotic explorer on Mars, investigating
+      the planet's surface and climate to determine its habitability for life!
+    </p>
+    <p style="color: aliceblue">Explore the Curiosity Rover in 3D! Choose a date and camera to view stunning images captured by the rover.</p>
+    <div id="container">
+      <div id="model-3d">
+      <div class="sketchfab-embed-wrapper">
+        <iframe
+          title="Curiosity Rover (clean)"
+          frameborder="0"
+          allowfullscreen
+          mozallowfullscreen="true"
+          webkitallowfullscreen="true"
+          allow="autoplay; fullscreen; xr-spatial-tracking"
+          xr-spatial-tracking
+          execution-while-out-of-viewport
+          execution-while-not-rendered
+          web-share
+          width="500px" height="500px"
+          
+          src="https://sketchfab.com/models/5d3732b929e94f65a8e53d03dcdc6ac1/embed"
+        >
+        </iframe>
+        </p>
+      </div>
+    </div>
+    <div id="config">
       <input type="text" id="date-picker" />
       <select id="selectCamera" onchange="selectCamera()">
         <option value="FHAZ">FHAZ</option>
@@ -32,9 +59,17 @@
         <option value="MAST">MAST</option>
         <option value="CHEMCAM">CHEMCAM</option>
         <option value="MAHLI">MAHLI</option>
+        <option value="MARDI">MARDI</option>
+        <option value="NAVCAM">NAVCAM</option>
       </select>
+      <div id="photos-container"></div>
     </div>
 
-    <div id="photos-container"></div>
+   
+
+
+
+    </div>
+    
   </body>
 </html>

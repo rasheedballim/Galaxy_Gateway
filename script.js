@@ -26,7 +26,7 @@ function fetchPhotos(selectedYear, selectedDay, selectedMonth) {
         return;
       }
 
-      const photoCount = Math.min(8, data.photos.length);
+      const photoCount = Math.min(6, data.photos.length);
       for (let i = 0; i < photoCount; i++) {
         const photo = data.photos[i].img_src;
         const img = document.createElement("img");

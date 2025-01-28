@@ -6,9 +6,8 @@
   justify-content: space-between;
   align-items: center;
 }
-body{
+body {
   background-color: rgb(21, 37, 82);
-
 }
 
 #logo {
@@ -33,26 +32,60 @@ body{
   color: white;
 }
 #mrp-background {
-  
-    width: auto;
-    height: 600px;
-    background-color: rgb(21, 37, 82);
-    border: red 2px solid;
+  width: auto;
+  height: 600px;
+  background-color: rgb(21, 37, 82);
+  border: red 2px solid;
+}
 
-}
-h1{
-    color: aliceblue;
-    text-align: center;
-    font-size: 50px;
-}
 #photos-container {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
 }
 
-#photos-container img{
+#photos-container img {
   height: 200px;
   width: 200px;
-  border-radius: 10px;
+  border-radius: solid red 10px;
+  padding: 30px;
+}
+
+#config {
+  height: 40px;
+  width: 900px;
+  text-align: center;
+  padding: 20px;
+}
+
+h1 {
+  font-size: 3rem;
+  color: #ff6f61;
+  margin: 20px 10px;
+  text-shadow: 2px 2px #222;
+  color: aliceblue;
+  text-align: center;
+  text-decoration: underline 10px;
+}
+p {
+  font-size: 1.2rem;
+  line-height: 1.6;
+  max-width: 8800px;
+  margin: 0 auto 30px;
+  padding: 0 15px;
+  color: red;
+  text-align: center;
+}
+
+#model-3d {
+  width: 500px;
+  height: 500px;
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
+  display: flex;
+  padding-top: 90px;
+}
+
+#container {
+  display: flex;
 }
